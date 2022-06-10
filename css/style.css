@@ -3,7 +3,8 @@
     --brand-blue-color: #2196F3;
     --brand-white-color: #ffffff;
     --brand-grey-color: #757575;
-    --section-padding-size: 94px; 
+    --section-padding-size: 94px;
+    --brand-bg-color: #F5F4FA;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -158,8 +159,7 @@ text-decoration: none;
 }
 
 .header-navigation {
-    display: flex;
-    justify-content:space-between;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -206,6 +206,8 @@ text-decoration: none;
     text-decoration: none;
 }
 
+
+
 .header-tel:hover {
     color:var(--brand-blue-color);
 }
@@ -224,6 +226,26 @@ text-decoration: none;
     text-decoration: none;
     
 }
+
+
+.header-soc-link {
+color: var(--brand-grey-color);
+margin-right: 10px;
+align-items: center;
+}
+
+
+
+.header-soc-icon {
+    fill: currentColor;
+    justify-content: center;
+}
+
+
+.header-soc-link:hover, .header-soc-link:focus, .header-soc-icon .header-soc-icon{
+    color: var(--brand-blue-color);
+    outline: none;
+    }
 
 /* -------------------------------HERO----------------------------*/
 
@@ -305,10 +327,42 @@ text-decoration: none;
 
 .benefits-item {
     margin-right: 30px;
+    min-width: 270px;
 }
 
 .benefits-item:last-child {
     margin-right: 0;
+}
+
+
+
+.skills-icon-antenna::before {
+background-image: url(../images/antenna\ \(1\).svg);
+}
+
+.skills-icon-astronaut::before {
+    background-image: url(../images/astronaut\ \(1\).svg);
+}
+
+.skills-icon-clock::before {
+    background-image: url(../images/clock\ \(1\).svg);
+}
+
+.skills-icon-diagram::before {
+    background-image: url(../images/diagram\ \(1\).svg);
+}
+
+
+
+.benefits-item::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--brand-bg-color);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -487,14 +541,83 @@ color: var(--brand-white-color);
 outline: none;
 }
 
+/* -------------------------------CLIENTS------------ */
+
+.section-clients {
+    background-color: var(--brand-white-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+color: var(--brand-color)
+}
+
+.clients-list {
+    display: flex;
+}
+
+
+.clients-list-item {
+    width: 172px;
+    height: 92px;
+}
+
+.clients-list-item:not(first-childe) {
+    margin-right: 30px;
+}
+
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+
+.clients-link:hover, .clients-link:focus {
+    color: var(--brand-blue-color);
+    border-color: var(--brand-blue-color);
+    outline: none;
+}
+
+.clients-icon {
+    fill: currentColor;
+}
 
 
 /* ---------------------------------FOOTER--------------------------- */
 .footer {
-    /* Footer bg */
 background: #2F303A;
 padding-top: 60px;
 padding-bottom: 60px;
+}
+
+
+.container-footer{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+.box-footer-logo {
+    box-sizing: border-box;
 }
 
 
@@ -588,7 +711,57 @@ color:var(--brand-white-color);
       }
 
 
+.footer-social-media {
+    margin-left: 70px;
+    /* background: tomato; */
+    box-sizing: border-box;
+}
 
+.footer-sm-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--brand-bg-color)
+}
+
+.footer-sm-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-sm-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-sm-item:not(first-childe) {
+    margin-right: 10px;
+}
+
+.footer-sm-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--brand-white-color);
+}
+
+
+.footer-sm-link:hover, .footer-sm-link:focus {
+    background-color: var(--brand-blue-color);
+    color: var(--brand-white-color);
+    outline: none;
+}
+
+
+
+.footer-sm-icon {
+    fill: currentColor;
+}
 
 
 /* ----------PORTFOLIO---------------- */
