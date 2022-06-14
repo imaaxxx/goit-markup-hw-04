@@ -692,7 +692,7 @@ address {
 
 .section-portfolio {
   padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 
 .hero-button-activity {
